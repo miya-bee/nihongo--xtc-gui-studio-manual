@@ -1,4 +1,4 @@
-# tategakiXTC GUI Studio マニュアル
+# 日本語XTC GUI Studio マニュアル
 
 EPUB / ZIP / CBZ / PDF / TXT / Markdown / Web記事 / なろう小説 を、
 X3・X4など縦書き対応端末向けの XTC / XTCH 形式へ変換するデスクトップアプリの使い方ガイドです。
@@ -45,5 +45,5 @@ Full版（v3.2 / v3.3系）にだけある機能は、該当箇所に 💎 Full�
 
 ## この文書について
 
-作成: tategakiXTC 開発チーム（Claude Codeによる下書き作成、Eさん・しまさんのレビューを想定）。
+作成: 日本語XTC 開発チーム（Claude Codeによる下書き作成、Eさん・しまさんのレビューを想定）。
 不明点や間違いに気づいたら、Issueまたはコメントで教えてください。
