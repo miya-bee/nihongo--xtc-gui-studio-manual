@@ -9,6 +9,13 @@
   /* 本文中の画像は「押せる」ことが分かる見た目にする */
   section img {
     max-width: 100%;
+    /* 端末ページのサンプル（480x800 など縦長）は、幅に合わせると画面を
+       占領して読み進めにくい。高さで頭打ちにすると、縦長のものだけが
+       縮み、横長のUIスクリーンショットは影響を受けない。
+       原寸はクリックで開ける。 */
+    max-height: 62vh;
+    width: auto;
+    height: auto;
     border: 1px solid #d8dde2;
     border-radius: 4px;
     cursor: zoom-in;
