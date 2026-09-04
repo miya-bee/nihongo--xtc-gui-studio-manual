@@ -1,0 +1,92 @@
+<!--
+  スクリーンショットを原寸で見られるようにする。
+  jekyll-theme-minimal は本文を狭い段に収めるため、UIの細部が読めない。
+  画像をクリックすると全画面のオーバーレイで開く。
+
+  依存ライブラリは使わない（GitHub Pages のビルドに何も足さないため）。
+-->
+<style>
+  /* 本文中の画像は「押せる」ことが分かる見た目にする */
+  section img {
+    max-width: 100%;
+    border: 1px solid #d8dde2;
+    border-radius: 4px;
+    cursor: zoom-in;
+    background: #fff;
+  }
+  section img:hover { border-color: #a8b4c0; }
+
+  #shot-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(16, 20, 24, 0.92);
+    display: none;
+    z-index: 9999;
+    cursor: zoom-out;
+    overflow: auto;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  #shot-overlay.open { display: block; }
+  #shot-overlay img {
+    display: block;
+    margin: 0 auto;
+    max-width: none;      /* 原寸で見せる。狭ければ横スクロールで追える */
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    cursor: zoom-out;
+  }
+  #shot-overlay .shot-hint {
+    position: fixed;
+    top: 12px;
+    right: 16px;
+    color: #e9edf1;
+    font: 13px/1.6 -apple-system, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 4px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  @media print { #shot-overlay { display: none !important; } }
+</style>
+
+<script>
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var overlay = document.createElement('div');
+    overlay.id = 'shot-overlay';
+    var full = document.createElement('img');
+    var hint = document.createElement('div');
+    hint.className = 'shot-hint';
+    hint.textContent = 'クリックまたは Esc で閉じる';
+    overlay.appendChild(full);
+    overlay.appendChild(hint);
+    document.body.appendChild(overlay);
+
+    function open(src, alt) {
+      full.src = src;
+      full.alt = alt || '';
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+      full.removeAttribute('src');
+    }
+
+    var images = document.querySelectorAll('section img');
+    for (var i = 0; i < images.length; i++) {
+      (function (img) {
+        img.addEventListener('click', function () { open(img.src, img.alt); });
+      })(images[i]);
+    }
+    overlay.addEventListener('click', close);
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') { close(); }
+    });
+  });
+})();
+</script>
