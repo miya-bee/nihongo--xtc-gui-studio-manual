@@ -31,7 +31,7 @@ XTCHはXTCのおよそ2倍のサイズ（約12MB対約6MB）で、ページ数�
 3. **画面写真が載っているページ**（1章・2章・8章あたり）を見比べる
 
 文字だけのページでは違いはほとんど分かりません。**差が出るのは画像のページ**です。
-このマニュアルは画面写真を45枚含んでいるので、比較材料には事欠きません。
+このマニュアルは画面写真を52枚含んでいるので、比較材料には事欠きません。
 
 | 見どころ | 何が分かるか |
 |---|---|
@@ -64,10 +64,10 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 端末 | 形式 | ページ数 | サイズ |
 |---|---|---|---|---|
-| [nihongo-xtc-manual_v3.1.2.9_x4.xtch](nihongo-xtc-manual_v3.1.2.9_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 132 | 12.10 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x4.xtc](nihongo-xtc-manual_v3.1.2.9_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 132 | 6.06 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x3.xtch](nihongo-xtc-manual_v3.1.2.9_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 124 | 12.38 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x3.xtc](nihongo-xtc-manual_v3.1.2.9_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 124 | 6.19 MB |
+| [nihongo-xtc-manual_v3.1.2.9_x4.xtch](nihongo-xtc-manual_v3.1.2.9_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 132 | 13.20 MB |
+| [nihongo-xtc-manual_v3.1.2.9_x4.xtc](nihongo-xtc-manual_v3.1.2.9_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 132 | 6.61 MB |
+| [nihongo-xtc-manual_v3.1.2.9_x3.xtch](nihongo-xtc-manual_v3.1.2.9_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 124 | 13.57 MB |
+| [nihongo-xtc-manual_v3.1.2.9_x3.xtc](nihongo-xtc-manual_v3.1.2.9_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 124 | 6.79 MB |
 
 **通読するならXTCHをおすすめします。** 画面写真が多いため、4階調のほうが細部がつぶれにくくなります。
 
@@ -81,9 +81,9 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 形式 | ページ数 | サイズ |
 |---|---|---|---|
-| [nihongo-xtc-manual_v3.1.2.9.epub](nihongo-xtc-manual_v3.1.2.9.epub) | EPUB 3 | リフロー（可変） | 3.11 MB |
+| [nihongo-xtc-manual_v3.1.2.9.epub](nihongo-xtc-manual_v3.1.2.9.epub) | EPUB 3 | リフロー（可変） | 3.18 MB |
 
-- 全20文書・画面写真45枚を**原寸で収録**しています。リーダーの拡大機能で細部まで確認できます
+- 全20文書・画面写真52枚を**原寸で収録**しています。リーダーの拡大機能で細部まで確認できます
 - 目次（nav）付きなので、章から章へ飛べます
 - **このEPUB自体を日本語XTC GUI Studio に読み込ませて変換できます**。
   「EPUBを変換するとどうなるか」を試す入力データとしてもお使いください
