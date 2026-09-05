@@ -97,3 +97,68 @@
   });
 })();
 </script>
+
+<!--
+  左段（見出しと脚注のあいだ）に、実際の変換結果を小さく置く。
+
+  jekyll-theme-minimal の左段は header と footer が上下に固定されるだけで、
+  そのあいだが広く空く。テーマの layout を丸ごと上書きすると更新に追随
+  できなくなるため、header の末尾へ差し込む形にしてある。
+-->
+<style>
+  #sidebar-sample { margin: 24px 0 0; }
+  #sidebar-sample a { display: block; border: 0; }
+  #sidebar-sample img {
+    display: block;
+    transition: opacity 0.12s ease-in-out;
+    width: 100%;
+    max-width: 248px;
+    max-height: 34vh;
+    height: auto;
+    border: 0;
+    background: none;
+  }
+  #sidebar-sample a:hover img { opacity: 0.82; }
+  #sidebar-sample .caption {
+    margin: 6px 0 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #7a8288;
+  }
+  /* 幅の狭い画面では左段が本文の上へ回り込む。そこへ画像を挟むと本文が
+     遠ざかるだけなので出さない。 */
+  @media print, screen and (max-width: 960px) {
+    #sidebar-sample { display: none; }
+  }
+</style>
+<script>
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector('.wrapper > header') || document.querySelector('header');
+    if (!header || document.getElementById('sidebar-sample')) { return; }
+
+    var box = document.createElement('div');
+    box.id = 'sidebar-sample';
+
+    // 画像はサンプル集への入口も兼ねる。サイドバーは全ページに出るので、
+    // 相対パスではなくサイト基準の絶対パスを使う。
+    var link = document.createElement('a');
+    link.href = '{{ "/docs/19-samples.html" | relative_url }}';
+    link.title = '変換後サンプル集を見る';
+
+    var img = document.createElement('img');
+    img.src = '{{ "/images/sidebar-pages.png" | relative_url }}';
+    img.alt = '縦書きで変換したページを3枚重ねた画像';
+    img.setAttribute('loading', 'lazy');
+    link.appendChild(img);
+    box.appendChild(link);
+
+    var caption = document.createElement('p');
+    caption.className = 'caption';
+    caption.textContent = '変換したページの例';
+    box.appendChild(caption);
+
+    header.appendChild(box);
+  });
+})();
+</script>
