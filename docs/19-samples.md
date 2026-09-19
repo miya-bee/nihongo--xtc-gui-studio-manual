@@ -195,10 +195,10 @@ Markdownを横書きで変換すると、見出しが本文より大きく組ま
 
 | 見えているもの | 設定場所 |
 |---|---|
-| 見出しが本文より大きい | [見出しサイズ階層](03-typesetting.md#markdown専用設定横書き) |
-| 章見出しの前で改ページ | [横書きMarkdown](03-typesetting.md#markdown専用設定横書き) |
-| 表の格子状の罫線 | [表罫線](03-typesetting.md#markdown専用設定横書き) |
-| 箇条書きの字下げ | [ネスト字下げ](03-typesetting.md#markdown専用設定横書き) |
+| 見出しが本文より大きい | [見出しサイズ階層](02-basic-settings.md#markdownレイアウト横書き) |
+| 章見出しの前で改ページ | [章改ページ](02-basic-settings.md#markdownレイアウト横書き) |
+| 表の格子状の罫線 | [表・表罫線](02-basic-settings.md#markdownレイアウト横書き) |
+| 箇条書きの字下げ | [リストのネスト字下げ](02-basic-settings.md#markdownレイアウト横書き) |
 | 見出しが目次に入る | [目次タブ](08-book-metadata.md#8-3-目次タブ) |
 
 ---
