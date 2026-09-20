@@ -3,16 +3,15 @@
 このマニュアルは、**Webで読む**ほかに、端末やEPUBリーダーで読める形でも配布しています。
 内容はすべて同じで、画面写真も収録済みです。
 
-> **ここに置いてあるファイルは v3.1.2.9 の時点の内容です。**
-> v3.2 で加わった機能（narou.rs 連携・登録作品、白紙ページ除外、青空文庫の注記の拡張など）は
-> 含まれていません。最新の説明は [Web版](https://miya-bee.github.io/nihongo--xtc-gui-studio-manual/) をご覧ください。
-> 形式ごとの見え方・速度を比べるテストデータとしては、このままお使いいただけます。
+> **ここに置いてあるファイルは v3.2 の内容です**（設定の並べ方が違う a版・b版に共通です）。
+> 最新の説明は [Web版](https://miya-bee.github.io/nihongo--xtc-gui-studio-manual/) をご覧ください。
+> Web版を更新したときは、このファイルも作り直します。
 
 ## 📦 5形式をまとめてダウンロード
 
 X3・X4用のXTC／XTCHとEPUBを、一つのZIPにまとめてダウンロードできます。
 
-**[比較用データ5形式をまとめてダウンロード（ZIP・8.36 MB）](nihongo-xtc-manual_v3.1.2.9_all-formats.zip)**
+**[比較用データ5形式をまとめてダウンロード（ZIP・12.23 MB）](nihongo-xtc-manual_v3.2_all-formats.zip)**
 
 ZIPには次の5ファイルが入っています。
 
@@ -36,7 +35,7 @@ ZIPには次の5ファイルが入っています。
 を確かめる**比較用テストデータ**としてそのまま使えます。
 
 見え方だけでなく**速度も同じ条件で比べられる**のがこのデータの利点です。
-XTCHはXTCのおよそ2倍のサイズ（約12MB対約6MB）で、ページ数は同じ。
+XTCHはXTCのおよそ2倍のサイズ（約18MB対約9MB）で、ページ数は同じ。
 つまり**1ページあたりのデータ量だけが違う**ので、開くまでの時間や
 ページ送りの反応の差が、階調のせいなのかどうかをはっきり切り分けられます。
 
@@ -83,14 +82,14 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 端末 | 形式 | ページ数 | サイズ |
 |---|---|---|---|---|
-| [nihongo-xtc-manual_v3.1.2.9_x4.xtch](nihongo-xtc-manual_v3.1.2.9_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 132 | 13.20 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x4.xtc](nihongo-xtc-manual_v3.1.2.9_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 132 | 6.61 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x3.xtch](nihongo-xtc-manual_v3.1.2.9_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 124 | 13.57 MB |
-| [nihongo-xtc-manual_v3.1.2.9_x3.xtc](nihongo-xtc-manual_v3.1.2.9_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 124 | 6.79 MB |
+| [nihongo-xtc-manual_v3.2_x4.xtch](nihongo-xtc-manual_v3.2_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 201 | 18.51 MB |
+| [nihongo-xtc-manual_v3.2_x4.xtc](nihongo-xtc-manual_v3.2_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 201 | 9.26 MB |
+| [nihongo-xtc-manual_v3.2_x3.xtch](nihongo-xtc-manual_v3.2_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 201 | 20.16 MB |
+| [nihongo-xtc-manual_v3.2_x3.xtc](nihongo-xtc-manual_v3.2_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 201 | 10.09 MB |
 
 **通読するならXTCHをおすすめします。** 画面写真が多いため、4階調のほうが細部がつぶれにくくなります。
 
-- 全21章、目次（章情報）と表紙・サムネイル入り。画面写真は本文の流れの中に配置しています
+- 表紙・扉・「このマニュアルについて」と1〜19章の計22項目の目次（章情報）入り。画面写真は本文の流れの中に配置しています
 - **画面写真は縦向きで統一**しています。端末の画面幅に合わせて縮小されるため、
   UIの細かい文字までは読めません。**細部を確認したいときはWeb版またはEPUB版**をご覧ください
   （回転して収録すれば読めるようになりますが、大半の図が横向きになり、
@@ -100,9 +99,9 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 形式 | ページ数 | サイズ |
 |---|---|---|---|
-| [nihongo-xtc-manual_v3.1.2.9.epub](nihongo-xtc-manual_v3.1.2.9.epub) | EPUB 3 | リフロー（可変） | 3.18 MB |
+| [nihongo-xtc-manual_v3.2.epub](nihongo-xtc-manual_v3.2.epub) | EPUB 3 | リフロー（可変） | 3.50 MB |
 
-- 全20文書・画面写真52枚を**原寸で収録**しています。リーダーの拡大機能で細部まで確認できます
+- 全20文書・画面写真58枚を**原寸で収録**しています。リーダーの拡大機能で細部まで確認できます
 - 目次（nav）付きなので、章から章へ飛べます
 - **このEPUB自体を日本語XTC GUI Studio に読み込ませて変換できます**。
   「EPUBを変換するとどうなるか」を試す入力データとしてもお使いください
