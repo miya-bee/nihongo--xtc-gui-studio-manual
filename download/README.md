@@ -11,7 +11,7 @@
 
 X3・X4用のXTC／XTCHとEPUBを、一つのZIPにまとめてダウンロードできます。
 
-**[比較用データ5形式をまとめてダウンロード（ZIP・12.23 MB）](nihongo-xtc-manual_v3.2_all-formats.zip)**
+**[比較用データ5形式をまとめてダウンロード（ZIP・12.53 MB）](nihongo-xtc-manual_v3.2_all-formats.zip)**
 
 ZIPには次の5ファイルが入っています。
 
@@ -82,10 +82,10 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 端末 | 形式 | ページ数 | サイズ |
 |---|---|---|---|---|
-| [nihongo-xtc-manual_v3.2_x4.xtch](nihongo-xtc-manual_v3.2_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 201 | 18.51 MB |
-| [nihongo-xtc-manual_v3.2_x4.xtc](nihongo-xtc-manual_v3.2_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 201 | 9.26 MB |
-| [nihongo-xtc-manual_v3.2_x3.xtch](nihongo-xtc-manual_v3.2_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 201 | 20.16 MB |
-| [nihongo-xtc-manual_v3.2_x3.xtc](nihongo-xtc-manual_v3.2_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 201 | 10.09 MB |
+| [nihongo-xtc-manual_v3.2_x4.xtch](nihongo-xtc-manual_v3.2_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 206 | 18.97 MB |
+| [nihongo-xtc-manual_v3.2_x4.xtc](nihongo-xtc-manual_v3.2_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 206 | 9.49 MB |
+| [nihongo-xtc-manual_v3.2_x3.xtch](nihongo-xtc-manual_v3.2_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 205 | 20.55 MB |
+| [nihongo-xtc-manual_v3.2_x3.xtc](nihongo-xtc-manual_v3.2_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 205 | 10.28 MB |
 
 **通読するならXTCHをおすすめします。** 画面写真が多いため、4階調のほうが細部がつぶれにくくなります。
 
