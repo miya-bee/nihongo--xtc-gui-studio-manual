@@ -3,7 +3,7 @@
 The Web manual is the source of truth; the downloadable EPUB (and the XTC/XTCH
 files converted from it) must say the same thing.  Run from anywhere:
 
-    python tools/build_manual_epub.py <out.epub> [--version-label "v3.2"]
+    python tools/build_manual_epub.py <out.epub> [--version-label "v3.3"]
 
 Structure follows the EPUB that shipped with v3.1.2.9: a cover page, one XHTML
 per chapter, a nav document, and every screenshot at its original size.
@@ -67,9 +67,9 @@ def readme_section(text: str, heading: str) -> str:
 
 
 def front_matter() -> tuple[str, str, str]:
-    """Chapter 0: what changed since v3.1.2, and how the a/b editions differ."""
+    """Chapter 0: what changed since v3.2, and the four settings tabs."""
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
-    parts = [readme_section(readme, 'v3.1.2 からの主な変更点'), readme_section(readme, '設定の並べ方が2通りあります')]
+    parts = [readme_section(readme, 'v3.2 からの主な変更点'), readme_section(readme, '設定エリアの4つのタブ')]
     text = '# このマニュアルについて' + nl_ + nl_ + nl_.join(p.strip() + nl_ for p in parts)
     # README sits one level above docs/, so its image paths need to look like docs/ ones.
     text = text.replace('](images/', '](../images/').replace('](docs/', '](')
@@ -164,7 +164,7 @@ def to_body(md_text: str) -> str:
     else:
         md_text = IMG_RE.sub(lambda m: f'\n\n<figure class="shot"><img src="../images/{m.group(2)}" alt="{html.escape(m.group(1))}"/><figcaption>{html.escape(m.group(1))}</figcaption></figure>\n\n', md_text)
     # Chapter-to-chapter links point at the XHTML files inside the book.
-    # The book carries the README's a/b section as chapter 0, so anchors stay valid.
+    # The book carries the README's settings-tab section as chapter 0, so anchors stay valid.
     md_text = README_LINK_RE.sub(lambda m: f'[{m.group(1)}](../text/00-about.xhtml{m.group(2) or ""})' if m.group(2) else m.group(1), md_text)
     md_text = DOWNLOAD_LINK_RE.sub(lambda m: m.group(1), md_text)
     md_text = LINK_RE.sub(lambda m: f'](../text/{m.group(1)}.xhtml{m.group(2) or ""})', md_text)
@@ -188,7 +188,7 @@ def xhtml(title: str, body: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('out', type=Path)
-    parser.add_argument('--version-label', default='v3.2')
+    parser.add_argument('--version-label', default='v3.3')
     parser.add_argument('--date', default='', help='ISO timestamp; default is now (UTC)')
     parser.add_argument('--device-width', type=int, default=0,
                         help='plain variant for converting to XTC: shrink images to this width, tables become lists')
