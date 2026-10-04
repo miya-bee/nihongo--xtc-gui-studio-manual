@@ -52,7 +52,7 @@ TategakiXTC_GUI_Studio.exe my.ini https://example.com/post D:\xtc\memo.xtch
 
 | オプション | 内容 |
 |---|---|
-| `--format xtc\|xtch\|both\|xtch_v2\|both_v2` | 出力形式（INI の `output_format` を上書き）。`both` は XTC・XTCH、`both_v2` は XTC・XTCH v2 |
+| `--format xtc\|xtch\|both\|xtch_v2\|both_v2` | 出力形式（INI の `output_format` を上書き）。`both` は XTC・XTCH、`both_v2` は XTC・XTCH v2。XTCH v2 は Simple Reader OS（SROS）専用 |
 | `--conflict rename\|overwrite\|error` | 同名ファイルがあるときの扱い |
 | `--name 名前` | 出力ファイル名（拡張子なし。入力が1件のときのみ） |
 | `--url-mode auto\|novel\|article\|aozora` | URL の取得方法（[後述](#urlの振り分け)） |
@@ -115,6 +115,10 @@ output_format=xtch
 - 文字コードは UTF-8（BOM 付きも可）。CP932 も読めます
 - 書籍情報ダイアログで作品ごとに保存した書名・著者・表紙画像の設定は、バッチ実行では使いません
   （INI に書いたキーだけが有効です）
+- LZ4圧縮は `lz4_compression_enabled=true`（保存のしかたは `lz4_output_mode=compressed_only|both`）で使います。
+  書かなければ**オフ**です。LZ4圧縮と XTCH v2 のファイルは **Simple Reader OS（SROS）専用**です（[21章](21-sros.md)）。
+  `[experimental]` に `lz4 = false` があると、`lz4_compression_enabled=true` でも圧縮せず、標準エラーに理由を出します
+- SROS の Comic Reader 用には `profile=x4_comic`（960×1600）か `profile=x3_comic`（1056×1584）を指定します
 
 ### `[batch]` セクション（URL取得と外部エンジン）
 
@@ -186,7 +190,7 @@ aozora_root=D:\tools\AozoraEpub3
 - `run_id` は実行ごとに変わります。`--result-json` のファイルにも同じ値が入るので、今回の結果かを確かめられます
 - `--result-json` のファイルは、実行の始めに前回のものを消し、`summary` より先に書きます。
   書けなかったときは `result_json.written` が `false` になり、変換が成功していても終了コードは5です
-- 呼び出し側は `--version` の `batch_api`（現在は3）で、コマンドラインの仕様の版を確認できます
+- 呼び出し側は `--version` の `batch_api`（現在は4）で、コマンドラインの仕様の版を確認できます
 
 ## できないこと
 
