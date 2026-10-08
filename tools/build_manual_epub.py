@@ -3,7 +3,7 @@
 The Web manual is the source of truth; the downloadable EPUB (and the XTC/XTCH
 files converted from it) must say the same thing.  Run from anywhere:
 
-    python tools/build_manual_epub.py <out.epub> [--version-label "v3.3"]
+    python tools/build_manual_epub.py <out.epub> [--version-label "v3.2.1"]
 
 Structure follows the EPUB that shipped with v3.1.2.9: a cover page, one XHTML
 per chapter, a nav document, and every screenshot at its original size.
@@ -67,9 +67,9 @@ def readme_section(text: str, heading: str) -> str:
 
 
 def front_matter() -> tuple[str, str, str]:
-    """Chapter 0: what changed since v3.2, and the four settings tabs."""
+    """Chapter 0: the public v3.2.1 versus v3.3, and the four settings tabs."""
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
-    parts = [readme_section(readme, 'v3.2 からの主な変更点'), readme_section(readme, '設定エリアの4つのタブ')]
+    parts = [readme_section(readme, '公開版 v3.2.1 と v3.3 の違い'), readme_section(readme, '設定エリアの4つのタブ')]
     text = '# このマニュアルについて' + nl_ + nl_ + nl_.join(p.strip() + nl_ for p in parts)
     # README sits one level above docs/, so its image paths need to look like docs/ ones.
     text = text.replace('](images/', '](../images/').replace('](docs/', '](')
@@ -188,7 +188,7 @@ def xhtml(title: str, body: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('out', type=Path)
-    parser.add_argument('--version-label', default='v3.3')
+    parser.add_argument('--version-label', default='v3.2.1')
     parser.add_argument('--date', default='', help='ISO timestamp; default is now (UTC)')
     parser.add_argument('--device-width', type=int, default=0,
                         help='plain variant for converting to XTC: shrink images to this width, tables become lists')

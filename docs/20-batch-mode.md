@@ -119,6 +119,11 @@ output_format=xtch
   書かなければ**オフ**です。LZ4圧縮と XTCH v2 のファイルは **Simple Reader OS（SROS）専用**です（[21章](21-sros.md)）。
   `[experimental]` に `lz4 = false` があると、`lz4_compression_enabled=true` でも圧縮せず、標準エラーに理由を出します
 - SROS の Comic Reader 用には `profile=x4_comic`（960×1600）か `profile=x3_comic`（1056×1584）を指定します
+- 圧縮版は `本_comp.xtc` のように `_comp` が付きます。XTCH v2 は `本_comp_v2.xtch` です。
+  `--conflict overwrite` は圧縮版も上書きし、`--conflict error` は圧縮版の名前が重なっても止まります
+- `xtch_v2`・`both_v2` は、Comic の機種か、`custom` で 960×1600／1056×1584 かつLZ4圧縮オンのときだけ使えます。
+  それ以外では `xtch`・`both` に変えて警告を出します（`--dry-run` の `requested_output_format` が指定した形式、
+  `output_format` が実際に使う形式です）
 
 ### `[batch]` セクション（URL取得と外部エンジン）
 
@@ -195,6 +200,6 @@ aozora_root=D:\tools\AozoraEpub3
 ## できないこと
 
 - 記事URLの「Web表示」（ブラウザで見えたままを撮影する方式）
-- 小説URL画面の登録作品の管理、続きだけのXTC（[11章](11-narou.md)）。バッチ実行は1 URLずつ取得して全体を変換します
+- 小説URL画面の登録作品の管理、【v3.3から】続きだけのXTC（[11章](11-narou.md)）。バッチ実行は1 URLずつ取得して全体を変換します
 
 → [README（目次）](../README.md)

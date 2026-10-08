@@ -3,7 +3,7 @@
 このマニュアルは、**Webで読む**ほかに、端末やEPUBリーダーで読める形でも配布しています。
 内容はすべて同じで、画面写真も収録済みです。
 
-> **ここに置いてあるファイルは v3.3 の内容です**。
+> **ここに置いてあるファイルは、公開中の v3.2.1 を対象にした内容です**（v3.3 で初めて入る機能には【v3.3から】と書いています）。
 > 最新の説明は [Web版](https://miya-bee.github.io/nihongo--xtc-gui-studio-manual/) をご覧ください。
 > Web版を更新したときは、このファイルも作り直します。
 
@@ -11,7 +11,7 @@
 
 X3・X4用のXTC／XTCHとEPUBを、一つのZIPにまとめてダウンロードできます。
 
-**[比較用データ5形式をまとめてダウンロード（ZIP・16.38 MB）](nihongo-xtc-manual_v3.3_all-formats.zip)**
+**[比較用データ5形式をまとめてダウンロード（ZIP・16.61 MB）](nihongo-xtc-manual_v3.2.1_all-formats.zip)**
 
 ZIPには次の5ファイルが入っています。
 
@@ -82,10 +82,10 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 端末 | 形式 | ページ数 | サイズ |
 |---|---|---|---|---|
-| [nihongo-xtc-manual_v3.3_x4.xtch](nihongo-xtc-manual_v3.3_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 261 | 24.00 MB |
-| [nihongo-xtc-manual_v3.3_x4.xtc](nihongo-xtc-manual_v3.3_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 261 | 12.01 MB |
-| [nihongo-xtc-manual_v3.3_x3.xtch](nihongo-xtc-manual_v3.3_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 255 | 25.54 MB |
-| [nihongo-xtc-manual_v3.3_x3.xtc](nihongo-xtc-manual_v3.3_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 255 | 12.78 MB |
+| [nihongo-xtc-manual_v3.2.1_x4.xtch](nihongo-xtc-manual_v3.2.1_x4.xtch) | Xteink X4（480×800） | **XTCH（4階調）** | 269 | 24.74 MB |
+| [nihongo-xtc-manual_v3.2.1_x4.xtc](nihongo-xtc-manual_v3.2.1_x4.xtc) | Xteink X4（480×800） | XTC（2階調） | 269 | 12.38 MB |
+| [nihongo-xtc-manual_v3.2.1_x3.xtch](nihongo-xtc-manual_v3.2.1_x3.xtch) | Xteink X3（528×792） | **XTCH（4階調）** | 264 | 26.44 MB |
+| [nihongo-xtc-manual_v3.2.1_x3.xtc](nihongo-xtc-manual_v3.2.1_x3.xtc) | Xteink X3（528×792） | XTC（2階調） | 264 | 13.23 MB |
 
 **通読するならXTCHをおすすめします。** 画面写真が多いため、4階調のほうが細部がつぶれにくくなります。
 
@@ -99,7 +99,7 @@ EPUB版も加えれば、「固定レイアウト（XTC/XTCH）」と「リフ�
 
 | ファイル | 形式 | ページ数 | サイズ |
 |---|---|---|---|
-| [nihongo-xtc-manual_v3.3.epub](nihongo-xtc-manual_v3.3.epub) | EPUB 3 | リフロー（可変） | 3.52 MB |
+| [nihongo-xtc-manual_v3.2.1.epub](nihongo-xtc-manual_v3.2.1.epub) | EPUB 3 | リフロー（可変） | 3.52 MB |
 
 - 全21文書・画面写真56枚を**原寸で収録**しています。リーダーの拡大機能で細部まで確認できます
 - 目次（nav）付きなので、章から章へ飛べます
