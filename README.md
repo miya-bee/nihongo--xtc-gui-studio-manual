@@ -7,6 +7,11 @@ X3・X4など縦書き対応端末向けの XTC / XTCH 形式へ変換するデ�
 旧版 v3.2.1 から **v4.0.0 で初めて入った機能**には **【v4.0.0から】** と書いています（章ファイル内の見出しなどでは、開発時の呼び名どおり「v3.3」と書かれている箇所があります。v3.3 は v4.0.0 の開発版の名前です）。
 Trial版との違いは [17. 版（エディション）の違い](docs/17-editions.md) にまとめています。
 
+> 🍎 **macOS版を使う方へ**: Apple シリコン（M1 以降）・macOS 14 以降の Mac で使える **macOS版**（`TategakiXTC_GUI_Studio.app`）があります。
+> 画面と操作は Windows版と同じなので、このマニュアルのほかの章もそのまま使えます。
+> 入れ方・初めて起動するときの手順・許可の確認・Windows版と呼び方が違うところは
+> → [22. macOS版で使う](docs/22-macos.md)
+
 > 📌 **Simple Reader OS（SROS）を使う方へ**: 出力形式「XTCH v2」・LZ4圧縮・マンガ用の機種とプリセットは、
 > X3/X4/X4 Pro 用のカスタムファームウェア **SROS 専用**の機能です。純正ファームウェアでは開けません。
 > → [21. Simple Reader OS（SROS）で読む](docs/21-sros.md)
@@ -121,6 +126,7 @@ Trial版との違いは [17. 版（エディション）の違い](docs/17-editi
 | [19. 変換後サンプル集](docs/19-samples.md) | 入力形式ごとの実際の出力と、その設定へのリンク |
 | [20. バッチ実行（コマンドライン）](docs/20-batch-mode.md) | ウィンドウを出さずに変換する。引数・INI・終了コード |
 | [21. Simple Reader OS（SROS）で読む](docs/21-sros.md) | SROS専用の機能（XTCH v2・LZ4圧縮・Comic Reader用の機種・マンガ用プリセット） |
+| [22. macOS版で使う](docs/22-macos.md) | 動作環境・入れ方・初めての起動（Gatekeeper）・許可の確認・保存場所・Windows版との読み替え |
 
 ---
 

@@ -76,6 +76,11 @@ narou.rs を導入済みのまま「AozoraEpub3直接」を選んでいると、
 > `narou_rs.exe` だけをコピーすると、構成ファイルが足りず使えません。
 > narou.rs の管理データは `%LOCALAPPDATA%\TategakiXTC-GUI-Studio\narou_rs_library\` に保存されます。
 
+> **macOS版では**: 実行ファイルは `narou_rs`（拡張子なし）、Java は `bin/java` を指定します。
+> 管理データは `~/Library/Application Support/TategakiXTC-GUI-Studio/narou_rs_library/` に保存されます。
+> Java・AozoraEpub3・narou.rs の置き場所と、narou.rs が macOS に止められるときの対処は
+> [22章](22-macos.md#小説urlの準備macos) を見てください。
+
 ### 2. URLと保存先
 
 - **Web小説URL** … `http://` または `https://` で始まるURL。▼から直近5件の履歴を選べます

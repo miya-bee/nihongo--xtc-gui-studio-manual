@@ -30,6 +30,9 @@ OSの強制終了や電源断を行うと、次回起動時まで古い一時デ
 **Portable版では要りません。** RAR / CBR の展開用に 7-Zip（`_internal/tools/7zz.exe` と `7z.dll`、ライセンス表記つき）を
 同梱しています。PATHの設定なども不要です。同梱の7-Zipが見つからない場合は、その旨の確認メッセージが出ます。
 
+**macOS版（`.app`）でも要りません。** macOS 用の 7-Zip（`7zz`）を `.app` の中に同梱しています。
+ソース版（`run_gui.command`）で同梱の 7-Zip が見つからないときは、ターミナルで `brew install sevenzip` を実行して入れてください。
+
 なお RAR / CBR は[フォルダ一括変換](12-folder-batch.md)の対象外です。1ファイルずつ開いて変換してください。
 
 ## 提供元が分からないZIP/CBZ/RARファイルを開いても大丈夫ですか？
