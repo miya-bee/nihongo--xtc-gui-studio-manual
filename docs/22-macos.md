@@ -180,10 +180,6 @@ echo $?
 `TategakiXTC_GUI_Studio.app` をゴミ箱へ入れます。設定やデータも消す場合は、
 [保存場所](#設定ログデータの保存場所)のフォルダ（`~/Library/Application Support/TategakiXTC-GUI-Studio/`）も削除します。
 
-## ソースから動かす場合（開発者向け）
 
-`.app` を使わず、ソース版を `run_gui.command` で起動することもできます（Python 3.10〜3.13 が必要です）。
-初回は `.venv` を作って必要なパッケージを入れ、記事URL用の Chromium も入れます。
-ソース版の設定ファイルは、ソースのフォルダにある `tategakiXTC_gui_studio.ini` です。`.app` に移るときは、初回起動時の取り込みで選んでください。
 
 → [README（目次）](../README.md)
