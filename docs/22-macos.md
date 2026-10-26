@@ -7,15 +7,15 @@
 
 ## 動作環境
 
-- **Apple シリコン（M1 以降）の Mac**。Intel の Mac では動きません
+- **Apple シリコン（M1 以降）または Intel プロセッサを搭載した Mac**
 - **macOS 14 Sonoma 以降**。それより前の macOS では起動できません
 
-Mac の種類は、アップルメニュー →「この Mac について」の「チップ」で確かめられます。
-「Apple M1」「Apple M2」などと書いてあれば使えます。「Intel」と書いてある Mac では使えません。
+Mac の種類は、アップルメニュー →「この Mac について」で確かめられます。
+「チップ」に「Apple M1」などとあれば Apple シリコン版を、「プロセッサ」に「Intel」とあれば Intel版を選んでください。
 
 ## 入れ方
 
-1. 配布ページから macOS版の ZIP（名前の末尾が `_macos-arm64.zip`）をダウンロードします
+1. 配布ページからお使いの Mac に合う ZIP をダウンロードします。Apple シリコンは `_macos-arm64.zip`、Intel Mac は `_macos-intel.zip` です
 2. 「ダウンロード」フォルダの ZIP をダブルクリックして展開します
 3. できたフォルダの中の **`TategakiXTC_GUI_Studio.app`** を「アプリケーション」フォルダへドラッグします
    （ほかの場所でも動きますが、移しておくと Launchpad や Spotlight から起動できます）
@@ -48,7 +48,7 @@ ZIP を**展開する前に**、ZIP から「ダウンロードした印」（�
 ZIP の名前と場所は、実際のものに読み替えてください。
 
 ```bash
-xattr -d com.apple.quarantine ~/Downloads/tategaki-xtc-gui-studio_v4.0.1-full_macos-arm64.zip
+xattr -d com.apple.quarantine ~/Downloads/tategaki-xtc-gui-studio_v4.0.4-full_macos-arm64.zip
 ```
 
 すでに展開してしまった場合は、アプリに対して実行します。
@@ -56,6 +56,11 @@ xattr -d com.apple.quarantine ~/Downloads/tategaki-xtc-gui-studio_v4.0.1-full_ma
 ```bash
 xattr -dr com.apple.quarantine /Applications/TategakiXTC_GUI_Studio.app
 ```
+
+Trial版を使う場合は、ZIP名を `tategaki-xtc-gui-studio_v4.0.4-trial_macos-arm64.zip` または
+`tategaki-xtc-gui-studio_v4.0.4-trial_macos-intel.zip` に読み替えます。
+Intel MacでFull版を使う場合は `tategaki-xtc-gui-studio_v4.0.4-full_macos-intel.zip` です。
+Trial版のアプリ名は `TategakiXTC_GUI_Studio_Trial.app` なので、展開後に方法Bを使う場合はアプリのパスも読み替えてください。
 
 ここで「Operation not permitted」と出る場合は、macOS がアプリの変更を止めています。方法Aを使うか、ZIP から方法Bをやり直してください。
 
@@ -133,12 +138,12 @@ Finder で開くには、メニュー「移動」→「フォルダへ移動…�
 小説URL（[11章](11-narou.md)）で使う Java・AozoraEpub3・narou.rs は、Windows版と同じく別に入れます。
 小説URL画面の **［導入手順］** ボタンに、macOS 向けの手順が出ます。要点は次のとおりです。
 
-- **Java 21 以上**: [Adoptium（Temurin）](https://adoptium.net/temurin/releases/) で「macOS」「aarch64」「JDK」「21 LTS」の .pkg を入れます。
-  `/Library/Java/JavaVirtualMachines/temurin-21.jdk/` に入り、［自動検出］で見つかります
+- **Java 21 以上**: [Adoptium（Temurin）](https://adoptium.net/temurin/releases/) で「macOS」「aarch64」（Apple シリコン）または「x64」（Intel）、「JDK」「21 LTS」の .pkg を入れます。
+  インストール後、［自動検出］で見つかります
 - **AozoraEpub3-JDK21**: 配布物をホームフォルダの `AozoraEpub3-JDK21` フォルダへ展開します（`~/AozoraEpub3-JDK21`）。
   中に `AozoraEpub3.jar` があれば準備完了です（`.exe` は Windows 用なので不要です）
-- **narou.rs**（使う場合）: [配布ページ](https://github.com/Rumia-Channel/narou.rs)の Releases から `narou_rs_mac_arm64.zip` を入れ、
-  ホームフォルダの `narou.rs` フォルダへフォルダごと展開します（`~/narou.rs`）
+- **narou.rs**（使う場合）: [配布ページ](https://github.com/Rumia-Channel/narou.rs)の Releases から、Apple シリコンは `narou_rs_mac_arm64.zip`、Intel Mac は `narou_rs_mac_x64.zip` を入れ、
+  ホームフォルダの `narou.rs` フォルダへフォルダごと展開します（`~/narou.rs`）。配布ファイル名は変更されることがあるため、Releases の最新版を確認してください
 
 > 「書類」「ダウンロード」フォルダへ置くと、macOS のアクセス制限で失敗することがあります。ホームフォルダの直下に置いてください。
 

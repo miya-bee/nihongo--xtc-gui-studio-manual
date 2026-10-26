@@ -1,5 +1,18 @@
 # 18. よくある質問・注意点
 
+## Windowsで起動時に警告が出ます
+
+Windows版はZIPを展開して使うPortable版です。初回起動時に「WindowsによってPCが保護されました」などの
+Microsoft Defender SmartScreen警告が出ることがあります。ダウンロードしたファイルが公式の配布リンクからのものだと確認できた場合に限り、
+警告画面の［詳細情報］から発行元やアプリ名を確認し、続行する場合は［実行］を選びます。
+警告を回避するためにSmartScreenやウイルス対策機能を無効にしないでください。
+組織のポリシーなどで［実行］が表示されない場合は、管理者にご相談ください。
+
+警告の表示や選択肢はWindowsの版・設定によって異なります。
+SmartScreenの判定については[Microsoftの説明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)もご覧ください。
+
+macOS版の初回起動は[22章](22-macos.md)、Linux版は[23章](23-linux.md)にまとめています。
+
 ## Full版とTrial版で何が違いますか？
 
 → [17. 版（エディション）の違い](17-editions.md) に一覧表があります。
