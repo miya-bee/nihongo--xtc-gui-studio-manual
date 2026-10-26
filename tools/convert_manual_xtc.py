@@ -28,7 +28,7 @@ def main() -> int:
     parser.add_argument('--app', type=Path, required=True, help='path to the app repository')
     parser.add_argument('--device', choices=sorted(DEVICES), action='append')
     parser.add_argument('--format', choices=('xtc', 'xtch'), action='append')
-    parser.add_argument('--name', default='nihongo-xtc-manual_v3.2.1')
+    parser.add_argument('--name', default='nihongo-xtc-manual_v4.0.4')
     args = parser.parse_args()
 
     sandbox = Path(tempfile.mkdtemp(prefix='manual-xtc-'))
