@@ -118,8 +118,6 @@ Finder で開くには、メニュー「移動」→「フォルダへ移動…�
 | 同梱 | 同梱フォント（Noto Sans JP・Noto Serif JP） |
 | **同梱していない** | 小説URL（URL→EPUB）で使う Java 21 以上・AozoraEpub3-JDK21・narou.rs（Windows版と同じ。[下記](#小説urlの準備macos)） |
 
-> 歯車メニューの「(β版) ebook2xtc」（[1章](01-getting-started.md#歯車メニュー)）は、Windows 専用のアプリの案内なので macOS版には出ません。
-
 ## Windows版と呼び方・場所が違うところ
 
 ほかの章の説明を macOS版で読むときは、次のように読み替えてください。
