@@ -18,6 +18,7 @@
 | **Xteink X3** | 528×792 | X3 |
 | **Xteink X4 Comic** | 960×1600 | Simple Reader OS（SROS）の Comic Reader 用（X4・X4 Pro） |
 | **Xteink X3 Comic** | 1056×1584 | SROS の Comic Reader 用（X3） |
+| **Murphy M3** | 240×416 | 【v4.0.5から】Murphy M3。小さな画面なので、文字サイズを小さめにして使います（[3章](03-typesetting.md#フォントサイズ余白)） |
 | **Custom** | 手動で指定 | ― |
 
 Comic の2つは、SROS（X3/X4/X4 Pro 用のカスタムファームウェア）の Comic Reader で読むマンガ用です。
@@ -28,8 +29,8 @@ Comic の2つは、SROS（X3/X4/X4 Pro 用のカスタムファームウェア�
 | 選択肢 | 内容 | 選べる機種 |
 |---|---|---|
 | **XTC** | 2階調（白黒）のXTCファイルを1つ保存 | すべて |
-| **XTCH** | 4階調（白黒4段階）のXTCHファイルを1つ保存 | X4・X3・Custom |
-| **XTC・XTCH** | 同じ原稿から XTC と XTCH の両方を保存。書籍情報・目次・表紙・サムネイル・ページ構成は両方で揃う | X4・X3・Custom |
+| **XTCH** | 4階調（白黒4段階）のXTCHファイルを1つ保存 | X4・X3・Murphy M3・Custom |
+| **XTC・XTCH** | 同じ原稿から XTC と XTCH の両方を保存。書籍情報・目次・表紙・サムネイル・ページ構成は両方で揃う | X4・X3・Murphy M3・Custom |
 | **XTCH v2 (XTH2/4KB)** | 4階調のXTCHを、**XTCH v2 形式**で1つ保存（下記。**SROS 専用**） | X4 Comic・X3 Comic |
 | **XTC・XTCH v2** | 同じ原稿から、LZ4圧縮した XTC と XTCH v2 の両方を保存（**SROS 専用**） | X4 Comic・X3 Comic |
 

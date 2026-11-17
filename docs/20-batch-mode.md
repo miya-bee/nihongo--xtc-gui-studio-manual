@@ -49,6 +49,7 @@ TategakiXTC_GUI_Studio.exe my.ini https://example.com/post D:\xtc\memo.xtch
 > `--result-json` のファイルで結果を読んでください。
 
 > **macOS版では** `.app` の中の実行ファイルをターミナルから呼び出します。終了を待ってから戻るので、`start /wait` は要りません。
+> **Linux版では** AppImage に引数を付けて呼び出します（[23章](23-linux.md#そのほかの違い)）。こちらも `start /wait` は要りません。
 >
 > ```bash
 > /Applications/TategakiXTC_GUI_Studio.app/Contents/MacOS/TategakiXTC_GUI_Studio my.ini ~/books/a.epub ~/xtc

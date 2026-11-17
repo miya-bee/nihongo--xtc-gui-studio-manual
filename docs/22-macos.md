@@ -7,15 +7,19 @@
 
 ## 動作環境
 
-- **Apple シリコン（M1 以降）または Intel プロセッサを搭載した Mac**
+- **Apple シリコン（M1 以降）の Mac**、または【v4.0.4から】**Intel の Mac**
 - **macOS 14 Sonoma 以降**。それより前の macOS では起動できません
 
-Mac の種類は、アップルメニュー →「この Mac について」で確かめられます。
-「チップ」に「Apple M1」などとあれば Apple シリコン版を、「プロセッサ」に「Intel」とあれば Intel版を選んでください。
+Mac の種類によって、ダウンロードする ZIP が違います。アップルメニュー →「この Mac について」の「チップ」（Intel の Mac では「プロセッサ」）で確かめてください。
+
+| 「この Mac について」の表示 | ダウンロードする ZIP |
+|---|---|
+| 「Apple M1」「Apple M2」など | 名前の末尾が `_macos-arm64.zip` |
+| 「Intel」 | 名前の末尾が `_macos-intel.zip` |
 
 ## 入れ方
 
-1. 配布ページからお使いの Mac に合う ZIP をダウンロードします。Apple シリコンは `_macos-arm64.zip`、Intel Mac は `_macos-intel.zip` です
+1. 配布ページから macOS版の ZIP（Apple シリコンなら `_macos-arm64.zip`、Intel なら `_macos-intel.zip`）をダウンロードします
 2. 「ダウンロード」フォルダの ZIP をダブルクリックして展開します
 3. できたフォルダの中の **`TategakiXTC_GUI_Studio.app`** を「アプリケーション」フォルダへドラッグします
    （ほかの場所でも動きますが、移しておくと Launchpad や Spotlight から起動できます）
@@ -113,6 +117,8 @@ Finder で開くには、メニュー「移動」→「フォルダへ移動…�
 | 同梱 | RAR／CBR の展開に使う 7-Zip（`7zz`） |
 | 同梱 | 同梱フォント（Noto Sans JP・Noto Serif JP） |
 | **同梱していない** | 小説URL（URL→EPUB）で使う Java 21 以上・AozoraEpub3-JDK21・narou.rs（Windows版と同じ。[下記](#小説urlの準備macos)） |
+
+> 歯車メニューの「(β版) ebook2xtc」（[1章](01-getting-started.md#歯車メニュー)）は、Windows 専用のアプリの案内なので macOS版には出ません。
 
 ## Windows版と呼び方・場所が違うところ
 
