@@ -3,7 +3,7 @@
 The Web manual is the source of truth; the downloadable EPUB (and the XTC/XTCH
 files converted from it) must say the same thing.  Run from anywhere:
 
-    python tools/build_manual_epub.py <out.epub> [--version-label "v5.0.0f"]
+    python tools/build_manual_epub.py <out.epub> [--version-label "v5.0.0"]
 
 Structure follows the EPUB that shipped with v3.1.2.9: a cover page, one XHTML
 per chapter, a nav document, and every screenshot at its original size.
@@ -70,7 +70,7 @@ def front_matter() -> tuple[str, str, str]:
     """Chapter 0: the features added since v4.0.0, the v4.0.0 overview and the four settings tabs."""
     readme = (ROOT / 'README.md').read_text(encoding='utf-8')
     parts = [
-        readme_section(readme, 'v4.0.0 から v5.0.0f までに加わった主な機能'),
+        readme_section(readme, 'v4.0.0 から v5.0.0 までに加わった主な機能'),
         readme_section(readme, 'v4.0.0 の新機能（旧版 v3.2.1 からの変更点）'),
         readme_section(readme, '設定エリアの4つのタブ'),
     ]
@@ -192,7 +192,7 @@ def xhtml(title: str, body: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('out', type=Path)
-    parser.add_argument('--version-label', default='v5.0.0f')
+    parser.add_argument('--version-label', default='v5.0.0')
     parser.add_argument('--date', default='', help='ISO timestamp; default is now (UTC)')
     parser.add_argument('--device-width', type=int, default=0,
                         help='plain variant for converting to XTC: shrink images to this width, tables become lists')
