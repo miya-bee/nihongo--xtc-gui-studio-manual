@@ -19,9 +19,12 @@
 | **Xteink X4 Comic** | 960×1600 | Simple Reader OS（SROS）の Comic Reader 用（X4・X4 Pro） |
 | **Xteink X3 Comic** | 1056×1584 | SROS の Comic Reader 用（X3） |
 | **Murphy M3** | 240×416 | 【v4.0.5から】Murphy M3。小さな画面なので、文字サイズを小さめにして使います（[3章](03-typesetting.md#フォントサイズ余白)） |
+| **Murphy M3 Comic** | 600×1040 | 【v5.1.0から】マンガ用（M3 の縦横2.5倍）。Comic の機種と同じ扱いです |
+| **Metalio E-INK 4 Plus** | 684×1216 | 【v5.1.0から】Metalio E-INK 4 Plus（4.7インチ・297ppi）。X4 より画面が細かいので、プリセット「Metalio 標準」（[7章](07-presets.md#プリセットの枠)）から始めると文字が実機で X4 と同じくらいの大きさになります |
+| **Metalio E-INK 4 Plus Comic** | 1368×2432 | 【v5.1.0から】マンガ用（Metalio E-INK 4 Plus の縦横2倍）。Comic の機種と同じ扱いです |
 | **Custom** | 手動で指定 | ― |
 
-Comic の2つは、SROS（X3/X4/X4 Pro 用のカスタムファームウェア）の Comic Reader で読むマンガ用です。
+名前に「Comic」が付く4つ（X4 Comic・X3 Comic・Murphy M3 Comic・Metalio E-INK 4 Plus Comic）は、SROS（X3/X4/X4 Pro 用のカスタムファームウェア）の Comic Reader で読むマンガ用です。
 画像ZIP・CBZ・PDF向けで、文字の本には向きません（→ [21章](21-sros.md#comic-reader-用の機種)）。
 
 出力形式の選択肢は、機種によって変わります。
@@ -29,14 +32,14 @@ Comic の2つは、SROS（X3/X4/X4 Pro 用のカスタムファームウェア�
 | 選択肢 | 内容 | 選べる機種 |
 |---|---|---|
 | **XTC** | 2階調（白黒）のXTCファイルを1つ保存 | すべて |
-| **XTCH** | 4階調（白黒4段階）のXTCHファイルを1つ保存 | X4・X3・Murphy M3・Custom |
-| **XTC・XTCH** | 同じ原稿から XTC と XTCH の両方を保存。書籍情報・目次・表紙・サムネイル・ページ構成は両方で揃う | X4・X3・Murphy M3・Custom |
-| **XTCH v2 (XTH2/4KB)** | 4階調のXTCHを、**XTCH v2 形式**で1つ保存（下記。**SROS 専用**） | X4 Comic・X3 Comic |
-| **XTC・XTCH v2** | 同じ原稿から、LZ4圧縮した XTC と XTCH v2 の両方を保存（**SROS 専用**） | X4 Comic・X3 Comic |
+| **XTCH** | 4階調（白黒4段階）のXTCHファイルを1つ保存 | X4・X3・Murphy M3・Metalio E-INK 4 Plus・Custom |
+| **XTC・XTCH** | 同じ原稿から XTC と XTCH の両方を保存。書籍情報・目次・表紙・サムネイル・ページ構成は両方で揃う | X4・X3・Murphy M3・Metalio E-INK 4 Plus・Custom |
+| **XTCH v2 (XTH2/4KB)** | 4階調のXTCHを、**XTCH v2 形式**で1つ保存（下記。**SROS 専用**） | Comic の4機種 |
+| **XTC・XTCH v2** | 同じ原稿から、LZ4圧縮した XTC と XTCH v2 の両方を保存（**SROS 専用**） | Comic の4機種 |
 
 - **Comic の機種**では「XTC」「XTCH v2」「XTC・XTCH v2」の3択です。XTCは**LZ4圧縮**、XTCHは**XTCH v2**に決まり、
   **圧縮版だけ**を保存します（LZ4圧縮で小さくならないページは圧縮せずに収めます）
-- **Custom** では、LZ4圧縮がオンで、幅×高さがちょうど 960×1600 か 1056×1584 のときだけ、XTCH を自動で XTCH v2 にして保存します。
+- **Custom** では、LZ4圧縮がオンで、幅×高さがちょうど Comic の機種の大きさ（960×1600・1056×1584・600×1040・1368×2432）のときだけ、XTCH を自動で XTCH v2 にして保存します。
   それ以外の大きさでは普通のLZ4圧縮です。LZ4圧縮がオフなら、Comic と同じ大きさでも圧縮しません
 - 機種を切り替えると、階調の意図を保って出力形式を合わせます（Comic へ: XTCH → XTCH v2、Comic から: XTCH v2 → XTCH）。
   形式が変わったときは変換ログで知らせます

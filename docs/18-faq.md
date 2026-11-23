@@ -61,8 +61,8 @@ SROS を使っていないときは、出力形式を従来の **XTCH**（また
 
 ## SROS の Comic Reader でマンガが開けません
 
-Comic Reader は、端末の画面のちょうど縦横2倍の解像度のファイルだけを開きます。
-機種を **Xteink X4 Comic**（X4・X4 Pro、960×1600）か **Xteink X3 Comic**（X3、1056×1584）にして変換し直してください。
+Comic Reader は、決まった解像度のファイルだけを開きます。
+機種を **Xteink X4 Comic**（X4・X4 Pro、960×1600）か **Xteink X3 Comic**（X3、1056×1584）にして変換し直してください（【v5.1.0から】Murphy M3 用は **Murphy M3 Comic**（600×1040）、Metalio E-INK 4 Plus 用は **Metalio E-INK 4 Plus Comic**（1368×2432））。
 Custom で寸法を打ち込んだときは、1pxでも違うと開けません（→ [21章](21-sros.md#comic-reader-用の機種)）。
 
 ## 禁則欠け補正を有効にしても何も変わりません

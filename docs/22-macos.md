@@ -135,6 +135,8 @@ Finder で開くには、メニュー「移動」→「フォルダへ移動…�
 | F5（読み直し） | F5。キーボードによっては **fn** キーを押しながら F5 |
 | 游明朝などの Windows のフォント | ヒラギノ明朝・ヒラギノ角ゴシックなど、Mac に入っているフォント |
 
+【v5.1.0から】［参照］で追加したフォントは、`~/Library/Application Support/TategakiXTC-GUI-Studio/font` にコピーされます（アプリの中には書き込みません）。
+
 フォントの［参照］は、Font Book で入れたフォントがあれば `~/Library/Fonts` から、なければ Mac 標準のフォント（ヒラギノなど）がある `/System/Library/Fonts` から始まります。
 
 ## 小説URLの準備（macOS）

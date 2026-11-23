@@ -126,10 +126,11 @@ output_format=xtch
 - LZ4圧縮は `lz4_compression_enabled=true`（保存のしかたは `lz4_output_mode=compressed_only|both`）で使います。
   書かなければ**オフ**です。LZ4圧縮と XTCH v2 のファイルは **Simple Reader OS（SROS）専用**です（[21章](21-sros.md)）。
   `[experimental]` に `lz4 = false` があると、`lz4_compression_enabled=true` でも圧縮せず、標準エラーに理由を出します
-- SROS の Comic Reader 用には `profile=x4_comic`（960×1600）か `profile=x3_comic`（1056×1584）を指定します
+- 機種（`profile`）は `x4`（480×800）・`x3`（528×792）・`murphy_m3`（240×416）・`metalio_e_ink_4_plus`（684×1216）・`custom`（`width` と `height` を使う）などです。知らない値は `x4` になります
+- SROS の Comic Reader 用には `profile=x4_comic`（960×1600）か `profile=x3_comic`（1056×1584）、【v5.1.0から】`murphy_m3_comic`（600×1040）・`metalio_e_ink_4_plus_comic`（1368×2432）を指定します
 - 圧縮版は `本_comp.xtc` のように `_comp` が付きます。XTCH v2 は `本_comp_v2.xtch` です。
   `--conflict overwrite` は圧縮版も上書きし、`--conflict error` は圧縮版の名前が重なっても止まります
-- `xtch_v2`・`both_v2` は、Comic の機種か、`custom` で 960×1600／1056×1584 かつLZ4圧縮オンのときだけ使えます。
+- `xtch_v2`・`both_v2` は、Comic の機種か、`custom` で Comic の大きさ（960×1600／1056×1584／600×1040／1368×2432）かつLZ4圧縮オンのときだけ使えます。
   それ以外では `xtch`・`both` に変えて警告を出します（`--dry-run` の `requested_output_format` が指定した形式、
   `output_format` が実際に使う形式です）
 
